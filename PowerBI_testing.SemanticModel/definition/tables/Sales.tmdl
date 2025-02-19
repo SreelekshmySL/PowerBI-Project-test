@@ -100,6 +100,10 @@ table Sales
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure div_3new = (Sales[sales amount]/2.8)/SUM(Sales[Target])
+		formatString: 0%;-0%;0%
+		lineageTag: 37f0e06f-cf34-464b-9333-52d7e344e67f
+
 	column 'Emp Id'
 		dataType: int64
 		formatString: 0
