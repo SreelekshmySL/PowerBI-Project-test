@@ -3350,148 +3350,428 @@ cultureInfo en-US
 			        }
 			      ],
 			      "NameType": "Name"
+			    },
+			    "employee.issel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Employees",
+			          "ConceptualProperty": "issel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "issel": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "sale.div_3new": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Sales",
+			          "ConceptualProperty": "div_3new"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "div 3new": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "div_3new": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Approval": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "meas switch": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mea switch": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "meas_switch": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "mea adjustment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mea modification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mea alteration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "mea change": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "mea shift": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "mea difference": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "mea regulator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "mea button": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "mea control": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        },
+			        {
+			          "mea knob": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.461
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.value_1": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "Value1"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value 1": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Value1": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.value_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "Value2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "value 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Value2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.ifselec_col": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "ifselec_col"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ifselec col": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ifselec_col": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ifselec pass": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ifselec saddle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ifselec gap": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ifselec dip": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "ifselec passage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.ifsele": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "ifsele"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ifsele": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.sel_val": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "selVal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sel val": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "selVal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.mea": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "mea"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mea": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "meas_switch.background": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "meas_switch",
+			          "ConceptualProperty": "background"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "background": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "upbringing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "education": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "family": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "experience": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "training": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "employee_is_named_id": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "employee.id": {
-			          "Target": {
-			            "Entity": "employee.id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Name": {
-			              "Role": "employee.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ids_are_names_IDs_of_employees"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "employee.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_ids"
-			        }
-			      ]
-			    },
-			    "employee_is_named_name": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "employee.name": {
-			          "Target": {
-			            "Entity": "employee.name"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Name": {
-			              "Role": "employee.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_employees"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "employee.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_names"
-			        }
-			      ]
-			    },
-			    "employee_detail_is_named_id": {
-			      "Binding": {
-			        "ConceptualEntity": "EmployeeDetails"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee_detail": {
-			          "Target": {
-			            "Entity": "employee_detail"
-			          }
-			        },
-			        "employee_detail.id": {
-			          "Target": {
-			            "Entity": "employee_detail.id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "employee_detail"
-			            },
-			            "Name": {
-			              "Role": "employee_detail.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "ids_are_names_IDs_of_employee_details"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee_detail"
-			            },
-			            "Object": {
-			              "Role": "employee_detail.id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employee_details_have_ids"
-			        }
-			      ]
-			    },
-			    "source_table_is_named_name": {
+			    "source_table_has_name": {
 			      "Binding": {
 			        "ConceptualEntity": "SourceTable"
 			      },
@@ -3510,19 +3790,6 @@ cultureInfo en-US
 			      },
 			      "Phrasings": [
 			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "source_table"
-			            },
-			            "Name": {
-			              "Role": "source_table.name"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "names_are_names_IDs_of_source_tables"
-			        },
-			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "source_table"
@@ -3534,10 +3801,762 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "source_tables_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "source_table"
+			            },
+			            "Name": {
+			              "Role": "source_table.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_source_tables"
 			        }
 			      ]
 			    },
-			    "sale_is_expensive": {
+			    "source_table_has_designation": {
+			      "Binding": {
+			        "ConceptualEntity": "SourceTable"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "source_table": {
+			          "Target": {
+			            "Entity": "source_table"
+			          }
+			        },
+			        "source_table.designation": {
+			          "Target": {
+			            "Entity": "source_table.designation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "source_table"
+			            },
+			            "Object": {
+			              "Role": "source_table.designation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "source_tables_have_designations"
+			        }
+			      ]
+			    },
+			    "employee_detail_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "EmployeeDetails"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee_detail": {
+			          "Target": {
+			            "Entity": "employee_detail"
+			          }
+			        },
+			        "employee_detail.category": {
+			          "Target": {
+			            "Entity": "employee_detail.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employee_detail"
+			            },
+			            "Object": {
+			              "Role": "employee_detail.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employee_details_have_categories"
+			        }
+			      ]
+			    },
+			    "employee_detail_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "EmployeeDetails"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee_detail": {
+			          "Target": {
+			            "Entity": "employee_detail"
+			          }
+			        },
+			        "employee_detail.id": {
+			          "Target": {
+			            "Entity": "employee_detail.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employee_detail"
+			            },
+			            "Object": {
+			              "Role": "employee_detail.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employee_details_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "employee_detail"
+			            },
+			            "Name": {
+			              "Role": "employee_detail.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_employee_details"
+			        }
+			      ]
+			    },
+			    "summarizecol_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "summarizecol"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "summarizecol": {
+			          "Target": {
+			            "Entity": "summarizecol"
+			          }
+			        },
+			        "summarizecol.category": {
+			          "Target": {
+			            "Entity": "summarizecol.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "summarizecol"
+			            },
+			            "Object": {
+			              "Role": "summarizecol.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "summarizecols_have_categories"
+			        }
+			      ]
+			    },
+			    "summarizecol_has_avg_bonus": {
+			      "Binding": {
+			        "ConceptualEntity": "summarizecol"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "summarizecol": {
+			          "Target": {
+			            "Entity": "summarizecol"
+			          }
+			        },
+			        "summarizecol.avg_bonus": {
+			          "Target": {
+			            "Entity": "summarizecol.avg_bonus"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "summarizecol"
+			            },
+			            "Object": {
+			              "Role": "summarizecol.avg_bonus"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "summarizecols_have_avg_bonuses"
+			        }
+			      ]
+			    },
+			    "summarizecol_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "summarizecol"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "summarizecol": {
+			          "Target": {
+			            "Entity": "summarizecol"
+			          }
+			        },
+			        "summarizecol.region": {
+			          "Target": {
+			            "Entity": "summarizecol.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "summarizecol"
+			            },
+			            "Object": {
+			              "Role": "summarizecol.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "summarizecols_have_regions"
+			        }
+			      ]
+			    },
+			    "summarize_tab_has_category": {
+			      "Binding": {
+			        "ConceptualEntity": "summarize_tab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "summarize_tab": {
+			          "Target": {
+			            "Entity": "summarize_tab"
+			          }
+			        },
+			        "summarize_tab.category": {
+			          "Target": {
+			            "Entity": "summarize_tab.category"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "summarize_tab"
+			            },
+			            "Object": {
+			              "Role": "summarize_tab.category"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "summarize_tab_have_categories"
+			        }
+			      ]
+			    },
+			    "summarize_tab_has_total_bonus": {
+			      "Binding": {
+			        "ConceptualEntity": "summarize_tab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "summarize_tab": {
+			          "Target": {
+			            "Entity": "summarize_tab"
+			          }
+			        },
+			        "summarize_tab.total_bonus": {
+			          "Target": {
+			            "Entity": "summarize_tab.total_bonus"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "summarize_tab"
+			            },
+			            "Object": {
+			              "Role": "summarize_tab.total_bonus"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "summarize_tab_have_total_bonuses"
+			        }
+			      ]
+			    },
+			    "summarize_tab_has_region": {
+			      "Binding": {
+			        "ConceptualEntity": "summarize_tab"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "summarize_tab": {
+			          "Target": {
+			            "Entity": "summarize_tab"
+			          }
+			        },
+			        "summarize_tab.region": {
+			          "Target": {
+			            "Entity": "summarize_tab.region"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "summarize_tab"
+			            },
+			            "Object": {
+			              "Role": "summarize_tab.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "summarize_tab_have_regions"
+			        }
+			      ]
+			    },
+			    "sale_has_minusdiv": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.minusdiv": {
+			          "Target": {
+			            "Entity": "sale.minusdiv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.minusdiv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_minusdiv"
+			        }
+			      ]
+			    },
+			    "sale_has_div_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.div_2": {
+			          "Target": {
+			            "Entity": "sale.div_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.div_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_div_2"
+			        }
+			      ]
+			    },
+			    "sale_has_opac": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.opac": {
+			          "Target": {
+			            "Entity": "sale.opac"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.opac"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_opac"
+			        }
+			      ]
+			    },
+			    "sale_has_ranking_on_designation": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.ranking_on_designation": {
+			          "Target": {
+			            "Entity": "sale.ranking_on_designation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.ranking_on_designation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_ranking_on_designation"
+			        }
+			      ]
+			    },
+			    "sale_has_RANK_query": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.RANK_query": {
+			          "Target": {
+			            "Entity": "sale.RANK_query"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.RANK_query"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_RANK_query"
+			        }
+			      ]
+			    },
+			    "sale_has_rank": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rank": {
+			          "Target": {
+			            "Entity": "sale.rank"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rank"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rank"
+			        }
+			      ]
+			    },
+			    "sale_has_rounded_sales": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rounded_sales": {
+			          "Target": {
+			            "Entity": "sale.rounded_sales"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rounded_sales"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rounded_sales"
+			        }
+			      ]
+			    },
+			    "sale_has_rankx_dense": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rankx_dense": {
+			          "Target": {
+			            "Entity": "sale.rankx_dense"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rankx_dense"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rankx_dense"
+			        }
+			      ]
+			    },
+			    "sale_has_rankx": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rankx": {
+			          "Target": {
+			            "Entity": "sale.rankx"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rankx"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rankx"
+			        }
+			      ]
+			    },
+			    "sale_has_rankx_desg": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rankx_desg": {
+			          "Target": {
+			            "Entity": "sale.rankx_desg"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rankx_desg"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rankx_desg"
+			        }
+			      ]
+			    },
+			    "sale_has_rounded_sales__desig": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rounded_sales__desig": {
+			          "Target": {
+			            "Entity": "sale.rounded_sales__desig"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rounded_sales__desig"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rounded_sales__desig"
+			        }
+			      ]
+			    },
+			    "sale_has_rankx_dense_desig": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.rankx_dense_desig": {
+			          "Target": {
+			            "Entity": "sale.rankx_dense_desig"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.rankx_dense_desig"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_rankx_dense_desig"
+			        }
+			      ]
+			    },
+			    "sale_has_sales_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.sales_amount": {
+			          "Target": {
+			            "Entity": "sale.sales_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.sales_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_sales_amount"
+			        }
+			      ]
+			    },
+			    "sale_has_net_price": {
 			      "Binding": {
 			        "ConceptualEntity": "Sales"
 			      },
@@ -3555,6 +4574,19 @@ cultureInfo en-US
 			        }
 			      },
 			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.net_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_net_prices"
+			        },
 			        {
 			          "Adjective": {
 			            "Subject": {
@@ -3581,23 +4613,340 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "net_price_indicates_how_expensive_sales_are"
+			        }
+			      ]
+			    },
+			    "sale_has_quantity": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
 			        },
+			        "sale.quantity": {
+			          "Target": {
+			            "Entity": "sale.quantity"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
 			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "sale.net_price"
+			              "Role": "sale.quantity"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "sales_have_net_prices"
+			          "ID": "sales_have_quantities"
 			        }
 			      ]
 			    },
-			    "employee_in_region": {
+			    "sale_has_target": {
+			      "Binding": {
+			        "ConceptualEntity": "Sales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "sale": {
+			          "Target": {
+			            "Entity": "sale"
+			          }
+			        },
+			        "sale.target": {
+			          "Target": {
+			            "Entity": "sale.target"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "sale"
+			            },
+			            "Object": {
+			              "Role": "sale.target"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "sales_have_targets"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_allselect_name_sum": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.allselect_name_sum": {
+			          "Target": {
+			            "Entity": "employee.allselect_name_sum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.allselect_name_sum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_allselect_name_sum"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_allselect_sum": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.allselect_sum": {
+			          "Target": {
+			            "Entity": "employee.allselect_sum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.allselect_sum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_allselect_sum"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_removefil_sum": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.removefil_sum": {
+			          "Target": {
+			            "Entity": "employee.removefil_sum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.removefil_sum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_removefil_sum"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_allexcept_sum": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.allexcept_sum": {
+			          "Target": {
+			            "Entity": "employee.allexcept_sum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.allexcept_sum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_allexcept_sum"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_all_sum": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.all_sum": {
+			          "Target": {
+			            "Entity": "employee.all_sum"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.all_sum"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_all_sum"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_sum_": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.sum_": {
+			          "Target": {
+			            "Entity": "employee.sum_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.sum_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_sum_"
+			        }
+			      ]
+			    },
+			    "employee_has_hasone": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee": {
+			          "Target": {
+			            "Entity": "employee"
+			          }
+			        },
+			        "employee.hasone": {
+			          "Target": {
+			            "Entity": "employee.hasone"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Object": {
+			              "Role": "employee.hasone"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_have_hasone"
+			        }
+			      ]
+			    },
+			    "bonus_has_employee_calc_m": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "employee.calc_m": {
+			          "Target": {
+			            "Entity": "employee.calc_m"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "employee.calc_m"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_calc_m"
+			        }
+			      ]
+			    },
+			    "employee_has_region": {
 			      "Binding": {
 			        "ConceptualEntity": "Employees"
 			      },
@@ -3614,76 +4963,243 @@ cultureInfo en-US
 			          }
 			        }
 			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "employee.region"
-			        }
-			      },
 			      "Phrasings": [
 			        {
-			          "Preposition": {
+			          "Attribute": {
 			            "Subject": {
 			              "Role": "employee"
 			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
 			            "Object": {
 			              "Role": "employee.region"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "employees_are_in_regions"
+			          "ID": "employees_have_regions"
 			        }
 			      ]
 			    },
-			    "summarize_tab_in_region": {
+			    "employee_has_manager_id": {
 			      "Binding": {
-			        "ConceptualEntity": "summarize_tab"
+			        "ConceptualEntity": "Employees"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "summarize_tab": {
+			        "employee": {
 			          "Target": {
-			            "Entity": "summarize_tab"
+			            "Entity": "employee"
 			          }
 			        },
-			        "summarize_tab.region": {
+			        "employee.manager_id": {
 			          "Target": {
-			            "Entity": "summarize_tab.region"
+			            "Entity": "employee.manager_id"
 			          }
-			        }
-			      },
-			      "SemanticSlots": {
-			        "Where": {
-			          "Role": "summarize_tab.region"
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Preposition": {
+			          "Attribute": {
 			            "Subject": {
-			              "Role": "summarize_tab"
+			              "Role": "employee"
 			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
 			            "Object": {
-			              "Role": "summarize_tab.region"
+			              "Role": "employee.manager_id"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarize_tab_are_in_regions"
+			          "ID": "employees_have_manager_ids"
+			        }
+			      ]
+			    },
+			    "employee_has_designation": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee": {
+			          "Target": {
+			            "Entity": "employee"
+			          }
+			        },
+			        "employee.designation": {
+			          "Target": {
+			            "Entity": "employee.designation"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Object": {
+			              "Role": "employee.designation"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_have_designations"
+			        }
+			      ]
+			    },
+			    "employee_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee": {
+			          "Target": {
+			            "Entity": "employee"
+			          }
+			        },
+			        "employee.name": {
+			          "Target": {
+			            "Entity": "employee.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Object": {
+			              "Role": "employee.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Name": {
+			              "Role": "employee.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_employees"
+			        }
+			      ]
+			    },
+			    "employee_has_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee": {
+			          "Target": {
+			            "Entity": "employee"
+			          }
+			        },
+			        "employee.id": {
+			          "Target": {
+			            "Entity": "employee.id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Object": {
+			              "Role": "employee.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_have_ids"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Name": {
+			              "Role": "employee.id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "ids_are_names_IDs_of_employees"
+			        }
+			      ]
+			    },
+			    "bonus_has_bonus": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "bonus.bonus": {
+			          "Target": {
+			            "Entity": "bonus.bonus"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "bonus.bonus"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_bonuses"
+			        }
+			      ]
+			    },
+			    "bonus_has_emp_id": {
+			      "Binding": {
+			        "ConceptualEntity": "Bonus"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "bonus": {
+			          "Target": {
+			            "Entity": "bonus"
+			          }
+			        },
+			        "bonus.emp_id": {
+			          "Target": {
+			            "Entity": "bonus.emp_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "bonus"
+			            },
+			            "Object": {
+			              "Role": "bonus.emp_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "bonuses_have_emp_ids"
 			        }
 			      ]
 			    },
@@ -3732,931 +5248,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "bonus_has_emp_id": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "bonus.emp_id": {
-			          "Target": {
-			            "Entity": "bonus.emp_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "bonus.emp_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_emp_ids"
-			        }
-			      ]
-			    },
-			    "bonus_has_bonus": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "bonus.bonus": {
-			          "Target": {
-			            "Entity": "bonus.bonus"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "bonus.bonus"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_bonuses"
-			        }
-			      ]
-			    },
-			    "employee_has_designation": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "employee.designation": {
-			          "Target": {
-			            "Entity": "employee.designation"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "employee.designation"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_designations"
-			        }
-			      ]
-			    },
-			    "employee_has_manager_id": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "employee.manager_id": {
-			          "Target": {
-			            "Entity": "employee.manager_id"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "employee.manager_id"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_manager_ids"
-			        }
-			      ]
-			    },
-			    "employee_has_region": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "employee.region": {
-			          "Target": {
-			            "Entity": "employee.region"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "employee.region"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_regions"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_calc_m": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.calc_m": {
-			          "Target": {
-			            "Entity": "employee.calc_m"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.calc_m"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_calc_m"
-			        }
-			      ]
-			    },
-			    "employee_has_hasone": {
-			      "Binding": {
-			        "ConceptualEntity": "Employees"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "employee": {
-			          "Target": {
-			            "Entity": "employee"
-			          }
-			        },
-			        "employee.hasone": {
-			          "Target": {
-			            "Entity": "employee.hasone"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "employee"
-			            },
-			            "Object": {
-			              "Role": "employee.hasone"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "employees_have_hasone"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_sum_": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.sum_": {
-			          "Target": {
-			            "Entity": "employee.sum_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.sum_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_sum_"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_all_sum": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.all_sum": {
-			          "Target": {
-			            "Entity": "employee.all_sum"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.all_sum"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_all_sum"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_allexcept_sum": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.allexcept_sum": {
-			          "Target": {
-			            "Entity": "employee.allexcept_sum"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.allexcept_sum"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_allexcept_sum"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_removefil_sum": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.removefil_sum": {
-			          "Target": {
-			            "Entity": "employee.removefil_sum"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.removefil_sum"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_removefil_sum"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_allselect_sum": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.allselect_sum": {
-			          "Target": {
-			            "Entity": "employee.allselect_sum"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.allselect_sum"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_allselect_sum"
-			        }
-			      ]
-			    },
-			    "bonus_has_employee_allselect_name_sum": {
-			      "Binding": {
-			        "ConceptualEntity": "Bonus"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "bonus": {
-			          "Target": {
-			            "Entity": "bonus"
-			          }
-			        },
-			        "employee.allselect_name_sum": {
-			          "Target": {
-			            "Entity": "employee.allselect_name_sum"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "bonus"
-			            },
-			            "Object": {
-			              "Role": "employee.allselect_name_sum"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "bonuses_have_allselect_name_sum"
-			        }
-			      ]
-			    },
-			    "sale_has_target": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.target": {
-			          "Target": {
-			            "Entity": "sale.target"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.target"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_targets"
-			        }
-			      ]
-			    },
-			    "sale_has_quantity": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.quantity": {
-			          "Target": {
-			            "Entity": "sale.quantity"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.quantity"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_quantities"
-			        }
-			      ]
-			    },
-			    "sale_has_sales_amount": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.sales_amount": {
-			          "Target": {
-			            "Entity": "sale.sales_amount"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.sales_amount"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_sales_amount"
-			        }
-			      ]
-			    },
-			    "sale_has_rankx_dense_desig": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rankx_dense_desig": {
-			          "Target": {
-			            "Entity": "sale.rankx_dense_desig"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rankx_dense_desig"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rankx_dense_desig"
-			        }
-			      ]
-			    },
-			    "sale_has_rounded_sales__desig": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rounded_sales__desig": {
-			          "Target": {
-			            "Entity": "sale.rounded_sales__desig"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rounded_sales__desig"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rounded_sales__desig"
-			        }
-			      ]
-			    },
-			    "sale_has_rankx_desg": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rankx_desg": {
-			          "Target": {
-			            "Entity": "sale.rankx_desg"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rankx_desg"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rankx_desg"
-			        }
-			      ]
-			    },
-			    "sale_has_rankx": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rankx": {
-			          "Target": {
-			            "Entity": "sale.rankx"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rankx"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rankx"
-			        }
-			      ]
-			    },
-			    "sale_has_rankx_dense": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rankx_dense": {
-			          "Target": {
-			            "Entity": "sale.rankx_dense"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rankx_dense"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rankx_dense"
-			        }
-			      ]
-			    },
-			    "sale_has_rounded_sales": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rounded_sales": {
-			          "Target": {
-			            "Entity": "sale.rounded_sales"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rounded_sales"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rounded_sales"
-			        }
-			      ]
-			    },
-			    "sale_has_rank": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.rank": {
-			          "Target": {
-			            "Entity": "sale.rank"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.rank"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_rank"
-			        }
-			      ]
-			    },
-			    "sale_has_RANK_query": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.RANK_query": {
-			          "Target": {
-			            "Entity": "sale.RANK_query"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.RANK_query"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_RANK_query"
-			        }
-			      ]
-			    },
-			    "sale_has_ranking_on_designation": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.ranking_on_designation": {
-			          "Target": {
-			            "Entity": "sale.ranking_on_designation"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.ranking_on_designation"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_ranking_on_designation"
-			        }
-			      ]
-			    },
-			    "sale_has_opac": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.opac": {
-			          "Target": {
-			            "Entity": "sale.opac"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.opac"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_opac"
-			        }
-			      ]
-			    },
-			    "sale_has_div_2": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.div_2": {
-			          "Target": {
-			            "Entity": "sale.div_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.div_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_div_2"
-			        }
-			      ]
-			    },
-			    "sale_has_minusdiv": {
-			      "Binding": {
-			        "ConceptualEntity": "Sales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "sale": {
-			          "Target": {
-			            "Entity": "sale"
-			          }
-			        },
-			        "sale.minusdiv": {
-			          "Target": {
-			            "Entity": "sale.minusdiv"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "sale"
-			            },
-			            "Object": {
-			              "Role": "sale.minusdiv"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "sales_have_minusdiv"
-			        }
-			      ]
-			    },
-			    "summarize_tab_has_region": {
+			    "summarize_tab_in_region": {
 			      "Binding": {
 			        "ConceptualEntity": "summarize_tab"
 			      },
@@ -4673,36 +5265,93 @@ cultureInfo en-US
 			          }
 			        }
 			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "summarize_tab.region"
+			        }
+			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
+			          "Preposition": {
 			            "Subject": {
 			              "Role": "summarize_tab"
 			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
 			            "Object": {
 			              "Role": "summarize_tab.region"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarize_tab_have_regions"
+			          "ID": "summarize_tab_are_in_regions"
 			        }
 			      ]
 			    },
-			    "summarize_tab_has_total_bonus": {
+			    "employee_in_region": {
 			      "Binding": {
-			        "ConceptualEntity": "summarize_tab"
+			        "ConceptualEntity": "Employees"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "summarize_tab": {
+			        "employee": {
 			          "Target": {
-			            "Entity": "summarize_tab"
+			            "Entity": "employee"
 			          }
 			        },
-			        "summarize_tab.total_bonus": {
+			        "employee.region": {
 			          "Target": {
-			            "Entity": "summarize_tab.total_bonus"
+			            "Entity": "employee.region"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "employee.region"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "employee"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "employee.region"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "employees_are_in_regions"
+			        }
+			      ]
+			    },
+			    "employee_has_issel": {
+			      "Binding": {
+			        "ConceptualEntity": "Employees"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "employee": {
+			          "Target": {
+			            "Entity": "employee"
+			          }
+			        },
+			        "employee.issel": {
+			          "Target": {
+			            "Entity": "employee.issel"
 			          }
 			        }
 			      },
@@ -4710,32 +5359,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "summarize_tab"
+			              "Role": "employee"
 			            },
 			            "Object": {
-			              "Role": "summarize_tab.total_bonus"
+			              "Role": "employee.issel"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarize_tab_have_total_bonuses"
+			          "ID": "employees_have_issel"
 			        }
 			      ]
 			    },
-			    "summarize_tab_has_category": {
+			    "sale_has_div_3new": {
 			      "Binding": {
-			        "ConceptualEntity": "summarize_tab"
+			        "ConceptualEntity": "Sales"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "summarize_tab": {
+			        "sale": {
 			          "Target": {
-			            "Entity": "summarize_tab"
+			            "Entity": "sale"
 			          }
 			        },
-			        "summarize_tab.category": {
+			        "sale.div_3new": {
 			          "Target": {
-			            "Entity": "summarize_tab.category"
+			            "Entity": "sale.div_3new"
 			          }
 			        }
 			      },
@@ -4743,32 +5392,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "summarize_tab"
+			              "Role": "sale"
 			            },
 			            "Object": {
-			              "Role": "summarize_tab.category"
+			              "Role": "sale.div_3new"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarize_tab_have_categories"
+			          "ID": "sales_have_div_3new"
 			        }
 			      ]
 			    },
-			    "summarizecol_has_region": {
+			    "meas_switch_has_value_1": {
 			      "Binding": {
-			        "ConceptualEntity": "summarizecol"
+			        "ConceptualEntity": "meas_switch"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "summarizecol": {
+			        "meas_switch": {
 			          "Target": {
-			            "Entity": "summarizecol"
+			            "Entity": "meas_switch"
 			          }
 			        },
-			        "summarizecol.region": {
+			        "meas_switch.value_1": {
 			          "Target": {
-			            "Entity": "summarizecol.region"
+			            "Entity": "meas_switch.value_1"
 			          }
 			        }
 			      },
@@ -4776,32 +5425,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "summarizecol"
+			              "Role": "meas_switch"
 			            },
 			            "Object": {
-			              "Role": "summarizecol.region"
+			              "Role": "meas_switch.value_1"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarizecols_have_regions"
+			          "ID": "meas_switches_have_value_1"
 			        }
 			      ]
 			    },
-			    "summarizecol_has_avg_bonus": {
+			    "meas_switch_has_value_2": {
 			      "Binding": {
-			        "ConceptualEntity": "summarizecol"
+			        "ConceptualEntity": "meas_switch"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "summarizecol": {
+			        "meas_switch": {
 			          "Target": {
-			            "Entity": "summarizecol"
+			            "Entity": "meas_switch"
 			          }
 			        },
-			        "summarizecol.avg_bonus": {
+			        "meas_switch.value_2": {
 			          "Target": {
-			            "Entity": "summarizecol.avg_bonus"
+			            "Entity": "meas_switch.value_2"
 			          }
 			        }
 			      },
@@ -4809,32 +5458,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "summarizecol"
+			              "Role": "meas_switch"
 			            },
 			            "Object": {
-			              "Role": "summarizecol.avg_bonus"
+			              "Role": "meas_switch.value_2"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarizecols_have_avg_bonuses"
+			          "ID": "meas_switches_have_value_2"
 			        }
 			      ]
 			    },
-			    "summarizecol_has_category": {
+			    "meas_switch_has_ifselec_col": {
 			      "Binding": {
-			        "ConceptualEntity": "summarizecol"
+			        "ConceptualEntity": "meas_switch"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "summarizecol": {
+			        "meas_switch": {
 			          "Target": {
-			            "Entity": "summarizecol"
+			            "Entity": "meas_switch"
 			          }
 			        },
-			        "summarizecol.category": {
+			        "meas_switch.ifselec_col": {
 			          "Target": {
-			            "Entity": "summarizecol.category"
+			            "Entity": "meas_switch.ifselec_col"
 			          }
 			        }
 			      },
@@ -4842,32 +5491,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "summarizecol"
+			              "Role": "meas_switch"
 			            },
 			            "Object": {
-			              "Role": "summarizecol.category"
+			              "Role": "meas_switch.ifselec_col"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "summarizecols_have_categories"
+			          "ID": "meas_switches_have_ifselec_cols"
 			        }
 			      ]
 			    },
-			    "employee_detail_has_category": {
+			    "meas_switch_has_ifsele": {
 			      "Binding": {
-			        "ConceptualEntity": "EmployeeDetails"
+			        "ConceptualEntity": "meas_switch"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "employee_detail": {
+			        "meas_switch": {
 			          "Target": {
-			            "Entity": "employee_detail"
+			            "Entity": "meas_switch"
 			          }
 			        },
-			        "employee_detail.category": {
+			        "meas_switch.ifsele": {
 			          "Target": {
-			            "Entity": "employee_detail.category"
+			            "Entity": "meas_switch.ifsele"
 			          }
 			        }
 			      },
@@ -4875,32 +5524,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "employee_detail"
+			              "Role": "meas_switch"
 			            },
 			            "Object": {
-			              "Role": "employee_detail.category"
+			              "Role": "meas_switch.ifsele"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "employee_details_have_categories"
+			          "ID": "meas_switches_have_ifsele"
 			        }
 			      ]
 			    },
-			    "source_table_has_designation": {
+			    "meas_switch_has_sel_val": {
 			      "Binding": {
-			        "ConceptualEntity": "SourceTable"
+			        "ConceptualEntity": "meas_switch"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "source_table": {
+			        "meas_switch": {
 			          "Target": {
-			            "Entity": "source_table"
+			            "Entity": "meas_switch"
 			          }
 			        },
-			        "source_table.designation": {
+			        "meas_switch.sel_val": {
 			          "Target": {
-			            "Entity": "source_table.designation"
+			            "Entity": "meas_switch.sel_val"
 			          }
 			        }
 			      },
@@ -4908,15 +5557,81 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "source_table"
+			              "Role": "meas_switch"
 			            },
 			            "Object": {
-			              "Role": "source_table.designation"
+			              "Role": "meas_switch.sel_val"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "source_tables_have_designations"
+			          "ID": "meas_switches_have_sel_val"
+			        }
+			      ]
+			    },
+			    "meas_switch_has_mea": {
+			      "Binding": {
+			        "ConceptualEntity": "meas_switch"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "meas_switch": {
+			          "Target": {
+			            "Entity": "meas_switch"
+			          }
+			        },
+			        "meas_switch.mea": {
+			          "Target": {
+			            "Entity": "meas_switch.mea"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "meas_switch"
+			            },
+			            "Object": {
+			              "Role": "meas_switch.mea"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "meas_switches_have_mea"
+			        }
+			      ]
+			    },
+			    "meas_switch_has_background": {
+			      "Binding": {
+			        "ConceptualEntity": "meas_switch"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "meas_switch": {
+			          "Target": {
+			            "Entity": "meas_switch"
+			          }
+			        },
+			        "meas_switch.background": {
+			          "Target": {
+			            "Entity": "meas_switch.background"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "meas_switch"
+			            },
+			            "Object": {
+			              "Role": "meas_switch.background"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "meas_switches_have_background"
 			        }
 			      ]
 			    },
