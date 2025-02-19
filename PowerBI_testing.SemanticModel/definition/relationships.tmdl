@@ -15,3 +15,17 @@ relationship 2278bab7-99cb-3c83-1ff3-a5ab7b987161
 	fromColumn: Employees.Id
 	toColumn: EmployeeDetails.Id
 
+relationship 8ec4a500-17b0-4867-87e1-1df07828ef4c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Sales (2)'.Date
+	toColumn: LocalDateTable_78601f30-6d75-40e3-9ad5-57026c530a5a.Date
+
+relationship 0e6aec07-666b-40f4-b8d6-5dc7f895808c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sales.Date
+	toColumn: LocalDateTable_2aea1397-8bf9-49f0-b28f-b5dc06b14a46.Date
+
+relationship AutoDetected_33eb476f-8f45-40cb-b02c-90259d89b364
+	fromColumn: 'Sales (2)'.'Emp Id'
+	toColumn: Employees.Id
+

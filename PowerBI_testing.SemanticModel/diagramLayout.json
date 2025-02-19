@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 272.51420111150173,
+        "x": 240.33261030866095,
         "y": 0
       },
       "nodes": [
@@ -104,6 +104,19 @@
           "nodeIndex": "meas_switch",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1828,
+            "y": 181.16377945830243
+          },
+          "nodeIndex": "Sales (2)",
+          "nodeLineageTag": "93b6ead4-1b80-4e65-acb5-0f1d7164dc40",
+          "size": {
+            "height": 248,
             "width": 234
           },
           "zIndex": 0

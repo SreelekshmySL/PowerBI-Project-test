@@ -6,7 +6,7 @@ model Model
 		legacyRedirects
 		returnErrorValuesAsNull
 
-annotation PBI_QueryOrder = ["Bonus","Employees","Sales","EmployeeDetails"]
+annotation PBI_QueryOrder = ["Bonus","Employees","Sales","EmployeeDetails","Sales (2)"]
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
@@ -22,6 +22,10 @@ ref table summarizecol
 ref table EmployeeDetails
 ref table SourceTable
 ref table meas_switch
+ref table 'Sales (2)'
+ref table DateTableTemplate_544de3c0-3599-4cba-8d16-0fa5be28fc1c
+ref table LocalDateTable_78601f30-6d75-40e3-9ad5-57026c530a5a
+ref table LocalDateTable_2aea1397-8bf9-49f0-b28f-b5dc06b14a46
 
 ref cultureInfo en-US
 

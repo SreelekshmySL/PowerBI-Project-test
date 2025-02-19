@@ -1,0 +1,84 @@
+table 'Sales (2)'
+	lineageTag: 93b6ead4-1b80-4e65-acb5-0f1d7164dc40
+
+	column 'Emp Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: ce230e2c-5a63-4dce-a501-9f9878283c06
+		summarizeBy: none
+		sourceColumn: Emp Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Target
+		dataType: int64
+		formatString: 0
+		lineageTag: 7f14fdf7-08de-4e3b-bffb-93e58f1a47a0
+		summarizeBy: sum
+		sourceColumn: Target
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 4f4bd628-26b4-45ba-b3ef-e895ac6ef945
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column NetPrice
+		dataType: int64
+		formatString: 0
+		lineageTag: 35190251-2e21-4dce-a42c-0d6ce507985c
+		summarizeBy: sum
+		sourceColumn: NetPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c481e508-27ad-4159-b760-c99c17dfd638
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 8ec4a500-17b0-4867-87e1-1df07828ef4c
+			defaultHierarchy: LocalDateTable_78601f30-6d75-40e3-9ad5-57026c530a5a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Attribute
+		dataType: string
+		lineageTag: e7724278-0a4c-41a0-87c8-ca7e9ffbf67b
+		summarizeBy: none
+		sourceColumn: Attribute
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: string
+		lineageTag: 4ae64b1d-b4e9-47a3-a411-616ed2ad6c4c
+		summarizeBy: none
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Sales (2)' = m
+		mode: import
+		source =
+				let
+				    Source = Sales,
+				    #"Unpivoted Columns" = Table.UnpivotOtherColumns(Source, {"Emp Id", "Target", "Quantity", "NetPrice", "Date"}, "Attribute", "Value")
+				in
+				    #"Unpivoted Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
