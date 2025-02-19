@@ -1,0 +1,27 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["Bonus","Employees","Sales","EmployeeDetails"]
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBIDesktopVersion = 2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Bonus
+ref table Employees
+ref table Sales
+ref table summarize_tab
+ref table summarizecol
+ref table EmployeeDetails
+ref table SourceTable
+ref table meas_switch
+
+ref cultureInfo en-US
+

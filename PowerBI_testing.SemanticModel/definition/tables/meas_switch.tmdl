@@ -1,0 +1,45 @@
+table meas_switch
+	lineageTag: 7de00edf-89ee-47c4-acfa-6bfe7411d108
+
+	measure ifsele = IF(ISFILTERED(meas_switch[Value2]),1,0)
+		formatString: 0
+		lineageTag: 3036189f-1aec-40b3-8f79-467a37f7f4b1
+
+	measure selVal = If(SELECTEDVALUE(meas_switch[Value2])="🗸","ticked","not ticked")
+		lineageTag: ea8811c2-0616-4eb0-a027-71666e92062a
+
+	measure mea = IF([ifsele]=1,"","N/A")
+		lineageTag: 4caa23c4-db6e-4fa2-a595-80d0c4c965a4
+
+	measure background = IF([ifsele]=1,"#FFFFFF00","#808080")
+		lineageTag: 2cb2cf4f-4c45-4ad3-9253-7f2b759b9157
+
+	column Value1
+		lineageTag: 6feaf079-1838-400e-956f-ba7ed82fe0fc
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value1]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value2
+		lineageTag: 0d6cfa5d-7dcf-46d2-bce8-fafb2f794b59
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Value2]
+
+		annotation SummarizationSetBy = Automatic
+
+	column ifselec_col = IF(ISFILTERED(meas_switch[Value2]),1,0)
+		formatString: 0
+		lineageTag: f11c7686-a94e-4f06-bf7b-dfd71278c8f0
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition meas_switch = calculated
+		mode: import
+		source = {("Include Benchmarking Data","🗸")}
+
+	annotation PBI_Id = fce5a04d641a4db1a7a9beb1ce25a08e
+

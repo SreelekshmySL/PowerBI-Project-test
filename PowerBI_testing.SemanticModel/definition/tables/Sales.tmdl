@@ -1,0 +1,153 @@
+table Sales
+	lineageTag: 6e574670-ea97-400b-bf3d-bd3be626b539
+
+	measure 'sales amount' = SUMX(Sales,Sales[Quantity]*Sales[NetPrice])
+		formatString: 0
+		lineageTag: 26528cf6-9b6e-4604-ab00-014562729792
+
+	measure rankx_dense_desig =
+			
+			RANKX(
+			    ALLSELECTED(Employees[Designation]) ,
+			    Sales[Rounded Sales _desig],,DESC,Dense
+			)
+		formatString: 0
+		lineageTag: a2b340f0-a7d2-49ed-b117-32a5e73c7bb1
+
+	measure 'Rounded Sales _desig' = MROUND( [sales amount], 100000 )
+		formatString: 0
+		lineageTag: 6875fe04-40d4-43ea-937a-13d8284eab81
+
+	measure rankx_desg =
+			
+			RANKX(
+			    ALLSELECTED(Employees[Designation]) ,
+			    Sales[Rounded Sales _desig],,DESC
+			)
+		formatString: 0
+		lineageTag: 4314eb67-9083-42b8-8f99-876410432e93
+
+	measure rankx =
+			
+			RANKX(
+			    ALLSELECTED(Employees[Name]) ,
+			    Sales[Rounded Sales],,DESC
+			)
+		formatString: 0
+		lineageTag: c6c800ce-ae9a-47bf-81e7-b0f851ac274a
+
+	measure rankx_dense =
+			
+			RANKX(
+			    ALLSELECTED(Employees[Name]) ,
+			    Sales[Rounded Sales],,DESC,Dense
+			)
+		formatString: 0
+		lineageTag: ac645d45-faa8-40bf-94cb-afe118da68bc
+
+	measure 'Rounded Sales' = MROUND( [sales amount], 10000 )
+		formatString: 0
+		lineageTag: 8f21de45-2a16-4c9a-bf6a-942f52b1cde4
+
+	measure RANK =
+			
+			RANK (
+			    DENSE,
+			    ALLSELECTED ( Employees[Name] ),
+			    ORDERBY ( [Rounded Sales], DESC,Employees[Name],ASC)
+			)
+		formatString: 0
+		lineageTag: 17d052b4-2859-42a6-99d4-832752e4dd5b
+
+	measure RANK_query =
+			
+			VAR SourceTable =
+			    ADDCOLUMNS ( ALLSELECTED ( Employees[Name]), "@Amt", [Rounded Sales] )
+			VAR Result =
+			    RANK (
+			        DENSE,
+			        SourceTable,
+			        ORDERBY ( [@Amt], DESC, Employees[Name], ASC )
+			    )
+			RETURN
+			    Result
+		formatString: 0
+		lineageTag: e0637dfc-8163-4e25-ba62-09805c30f792
+
+	measure 'Ranking on designation' =
+			
+			IF (
+			    ISINSCOPE ( Employees[Designation] ),
+			    RANKX (
+			        ALLSELECTED ( Employees[Designation] ),
+			        Sales[sales amount]
+			    )
+			)
+		formatString: 0
+		lineageTag: c2bfda20-7d05-4db0-b65b-06b79a4fda53
+
+	measure opac = IF(Sales[sales amount]>20000,0.5,If(Sales[sales amount]>10000,0.1,0.2))
+		lineageTag: 5691d440-7647-4fbc-90bc-8eaf67736a44
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure div2 = (Sales[sales amount]/2)/SUM(Sales[Target])
+		formatString: 0%;-0%;0%
+		lineageTag: 8d1e3bc5-d68b-45ef-859a-bafefce95619
+
+	measure minusdiv = 1- [div2]
+		lineageTag: e8fcfbfa-f7f6-4778-8de3-4f34d44075a3
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Emp Id'
+		dataType: int64
+		formatString: 0
+		lineageTag: f07ad7ee-2f42-4bb9-bd2c-7050fae4d5f8
+		summarizeBy: none
+		sourceColumn: Emp Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Target
+		dataType: int64
+		formatString: 0
+		lineageTag: ebfbaabb-c2b3-4254-9894-6589ee54a4d3
+		summarizeBy: sum
+		sourceColumn: Target
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: e7a2e912-d9a9-4dcb-b30e-ff5590530501
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column NetPrice
+		dataType: int64
+		formatString: 0
+		lineageTag: 411a84e9-1098-48f0-8283-97b601065906
+		summarizeBy: sum
+		sourceColumn: NetPrice
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\01- Documents\29-11- PowerBI\000 CRM\sampleData_xviz.xlsx"), null, true),
+				    Sales_Sheet = Source{[Item="Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sales_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Emp Id", Int64.Type}, {"Target", Int64.Type}, {"Quantity", Int64.Type}, {"NetPrice", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
