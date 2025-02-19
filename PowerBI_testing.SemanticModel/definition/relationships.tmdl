@@ -1,0 +1,17 @@
+relationship 7106e060-5e6d-3242-0e48-ec9d9aa58647
+	crossFilteringBehavior: bothDirections
+	fromColumn: Sales.'Emp Id'
+	toColumn: Employees.Id
+
+relationship 8d1443da-e8cd-6bea-228e-d7da7e5d7b35
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Bonus.'Emp id'
+	toColumn: Employees.Id
+
+relationship 2278bab7-99cb-3c83-1ff3-a5ab7b987161
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: Employees.Id
+	toColumn: EmployeeDetails.Id
+

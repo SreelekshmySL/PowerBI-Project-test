@@ -1,0 +1,34 @@
+table summarize_tab
+	lineageTag: 163b49d1-fb7c-4444-b0de-b51e87d2845f
+
+	column Region
+		lineageTag: 922a700d-0190-4725-b518-d8ee16ee9fd7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Employees[Region]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Total bonus'
+		formatString: 0
+		lineageTag: cd6f6352-c6f0-44a6-9f6b-f5eb3949ba53
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Total bonus]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Category
+		lineageTag: 4efe0c88-3a7e-4ce7-afc3-bfee34c95608
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: EmployeeDetails[Category]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition summarize_tab = calculated
+		mode: import
+		source = SUMMARIZE(Employees,Employees[Region],EmployeeDetails[Category],"Total bonus",sum(Bonus[Bonus]))
+
+	annotation PBI_Id = 916b91b4e4444f4699cfd304909b18fa
+

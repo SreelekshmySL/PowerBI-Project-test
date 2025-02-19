@@ -1,0 +1,5 @@
+{
+  "objectId": "",
+  "type": 4,
+  "explorationState": "{\"version\":\"1.8\",\"activeSection\":\"\",\"sections\":{\"7740a2e0b5c9147ba58c\":{\"visualContainers\":{\"1648ad7b75a3274de189\":{\"singleVisual\":{\"visualType\":\"PBIFUN\",\"mobileObjects\":{\"scatter\":[{\"properties\":{\"size\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}]}}],\"funnel\":[],\"lines\":[],\"canvas\":[],\"x_axis\":[{\"properties\":{\"xlimit_tick_size\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}]}}],\"y_axis\":[{\"properties\":{\"ylimit_tick_size\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}]}}]}}},\"dde6cc137422c21919d9\":{\"singleVisual\":{\"visualType\":\"card\",\"mobileObjects\":{\"categoryLabels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"wordWrap\":[]}}}}}}}"
+}

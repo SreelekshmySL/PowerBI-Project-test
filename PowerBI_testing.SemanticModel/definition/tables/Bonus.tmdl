@@ -1,0 +1,36 @@
+table Bonus
+	lineageTag: e471e139-ec37-4ace-a54c-d2ef81439ade
+
+	column 'Emp id'
+		dataType: int64
+		formatString: 0
+		lineageTag: 63cc9619-d273-4f85-9c42-18d1350f90b8
+		summarizeBy: none
+		sourceColumn: Emp id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Bonus
+		dataType: int64
+		formatString: 0
+		lineageTag: 2aba2fd6-0dde-4b69-acf3-3ba0457aa48a
+		summarizeBy: sum
+		sourceColumn: Bonus
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Bonus = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\01- Documents\29-11- PowerBI\000 CRM\sampleData_xviz.xlsx"), null, true),
+				    Bonus_Sheet = Source{[Item="Bonus",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Bonus_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Emp id", Int64.Type}, {"Bonus", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,35 @@
+table summarizecol
+	lineageTag: 9fafd3d6-df75-4a67-ab31-350f51a21ec8
+
+	column Region
+		lineageTag: d81a154f-6ddc-4bec-9e06-894ccbc317b1
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Employees[Region]
+
+		annotation SummarizationSetBy = Automatic
+
+	column AvgBonus
+		lineageTag: 1e040d92-603a-44cb-b167-7c98f7c04595
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [AvgBonus]
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Category
+		lineageTag: e4910429-8f8b-4e64-8f29-6edb2eb8f2f3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: EmployeeDetails[Category]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition summarizecol = calculated
+		mode: import
+		source = SUMMARIZECOLUMNS(Employees[Region],EmployeeDetails[Category],"AvgBonus",AVERAGE(Bonus[Bonus]))
+
+	annotation PBI_Id = df4a49fb6507466e819885215de828eb
+

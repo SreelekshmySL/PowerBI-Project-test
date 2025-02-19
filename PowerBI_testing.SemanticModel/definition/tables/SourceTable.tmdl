@@ -1,0 +1,28 @@
+table SourceTable
+	lineageTag: b755a362-a269-4464-8595-05efb3203d44
+
+	column Designation
+		lineageTag: ccd4cd98-74ae-4ef2-a885-896514a3de87
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Employees[Designation]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		lineageTag: 77fa5dc8-697c-43b6-a523-a9fcad169d06
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: Employees[Name]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SourceTable = calculated
+		mode: import
+		source = ```
+				
+				   ALL(Employees[Designation],Employees[Name])
+				```
+
+	annotation PBI_Id = 3a442d850be44cd586d7090e54f340a0
+

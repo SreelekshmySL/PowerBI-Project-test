@@ -1,0 +1,98 @@
+table Employees
+	lineageTag: d0522647-0f35-4ee5-9d01-1a2e05425c67
+
+	measure calc_m = CALCULATE(Sum(Bonus[Bonus]),FILTER(Employees,Employees[Designation]<>""))
+		formatString: 0
+		lineageTag: ace93e48-f476-4a05-9a3d-f537d2a0e26c
+
+	measure hasone = HASONEVALUE(Employees[Region])
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 6253f62e-6580-4c06-a9e2-c58c077acd85
+
+	measure sum_ = sum(Bonus[Bonus])
+		formatString: 0
+		lineageTag: bb536733-e60d-4387-a2a5-77b61f57381c
+
+	measure all_sum = CALCULATE(SUM(Bonus[Bonus]),ALL(Employees))
+		formatString: 0
+		lineageTag: 44fd27aa-eda1-4485-a5e4-ca05684c3722
+
+	measure allexcept_sum = CALCULATE(Sum(Bonus[Bonus]),ALLEXCEPT(Employees,Employees[Designation]))
+		formatString: 0
+		lineageTag: d78d45b9-0aac-485e-bbdd-7e02861b879f
+
+	measure removefil_sum = CALCULATE(SUM(Bonus[Bonus]),REMOVEFILTERS(Employees))
+		formatString: 0
+		lineageTag: 1a25e448-c404-4b9f-8bd5-f01e36de6ce8
+
+	measure allselect_sum = CALCULATE(Sum(Bonus[Bonus]),ALLSELECTED(Employees))
+		formatString: 0
+		lineageTag: 1ab5a3e0-d76e-44ba-9e9a-f5ad745a8a63
+
+	measure allselect_name_sum = CALCULATE(Sum(Bonus[Bonus]),ALLSELECTED(Employees[Name]))
+		formatString: 0
+		lineageTag: 8270b613-a497-4109-9475-85e924b9de1f
+
+	measure issel = if(ISFILTERED(Employees[Region]),1,0)
+		formatString: 0
+		lineageTag: 06c9ac73-353a-4e6b-81f8-eb73e844cd6e
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 8ae6d155-eac2-4555-9142-5e3739439a16
+		summarizeBy: none
+		sourceColumn: Id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 17b3e774-d7b5-4c73-82ad-03794c7f03f9
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Designation
+		dataType: string
+		lineageTag: 96570f71-7279-4177-93b5-065336dc39dd
+		summarizeBy: none
+		sourceColumn: Designation
+
+		annotation SummarizationSetBy = Automatic
+
+	column ManagerId
+		dataType: int64
+		formatString: 0
+		lineageTag: c89fa10c-742f-44ba-b30d-4d1292bbb273
+		summarizeBy: none
+		sourceColumn: ManagerId
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 2658fe57-d070-4d5e-97c2-abfed8ece13e
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Employees = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("D:\01- Documents\29-11- PowerBI\000 CRM\sampleData_xviz.xlsx"), null, true),
+				    Employees_Sheet = Source{[Item="Employees",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Employees_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Id", Int64.Type}, {"Name", type text}, {"Designation", type text}, {"ManagerId", Int64.Type}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","Marketing Manager",null,Replacer.ReplaceValue,{"Designation"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","Data Analyst",null,Replacer.ReplaceValue,{"Designation"})
+				in
+				    #"Replaced Value1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
